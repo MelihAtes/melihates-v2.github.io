@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'articles - Links to the articles I wrote',
                 'clear - Clears the terminal screen.',
                 'date - Displays the current date and time.',
-                'exit - Closes the terminal window.'
+                'exit - Closes the terminal window.',
             ];
 
             availableCommands.forEach(cmd => {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <br>* <a href="https://backloggd.com/u/MelyhTheHun/" target="_blank" rel="noopener">backloggd</a>
                 <br>* <a href="https://www.imdb.com/user/ur102851419/?ref_=nv_usr_prof_2" target="_blank" rel="noopener">imdb</a>
                 <br>* <a href="https://www.goodreads.com/user/show/139132389-melih-ate" target="_blank" rel="noopener">goodreads</a>
-                <br>
+                <br><br>
             `;
             const newLine = document.createElement('div');
             newLine.innerHTML = socialInfo;
@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
                 [+..oo]
                 <br><a href="https://trinket.io/python/86fa4d9815">* the Hunt: text based python adventure game</a>
+                <br><br>
             `;
             const newLine = document.createElement('div');
             newLine.innerHTML = gamesInfo;
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <br>* <a href="https://www.youtube.com/watch?v=6m-MILjlzBQ&t=32s" target="_blank" rel="noopener">Do Not Go Gentle Into That Good Night with King Bran's Final Voyage</a>
                 <br>* <a href="https://www.youtube.com/watch?v=gQ5dQZhC83I" target="_blank" rel="noopener">Motivation of Dr. Who</a>
                 <br>* <a href="https://www.youtube.com/watch?v=_SzVKhBjbXY" target="_blank" rel="noopener">Action of NES</a>
+                <br><br>
             `;
             const newLine = document.createElement('div');
             newLine.innerHTML = videosInfo;
@@ -116,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <br>* <a href="https://medium.com/@melihates2004/communism-fails-c835e147057" target="_blank" rel="noopener">Communism Fails</a>
                 <br>* <a href="https://medium.com/@melihates2004/that-bruh-moment-called-life-90043f0dd512" target="_blank" rel="noopener">That Bruh Moment Called Life</a>
                 <br>* <a href="https://medium.com/@melihates2004/atatürks-achievements-b4ec54a4280e" target="_blank" rel="noopener">Ataturk's Achivements</a>
+                <br><br>
             `;
             const newLine = document.createElement('div');
             newLine.innerHTML = articlesInfo;
