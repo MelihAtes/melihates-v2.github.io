@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+    background-color: #000;
+    color: #ff0000;
+    padding: 20px;
+}
+
+a {
+    font-family: monospace;
+    background-color: #000;
+    color: #ff0000;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+#terminal {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#output {
+    min-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ff0000;
+    outline: none;
+}
+
+#input:focus {
+    outline: none;
+}
