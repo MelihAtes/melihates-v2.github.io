@@ -42,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 newLine.textContent = cmd;
                 output.appendChild(newLine);
             });
+            output.appendChild(document.createElement('br'));
         } else if (command.toLowerCase() === 'clear') {
             output.innerHTML = ''; // Clear command
             const newLine = document.createElement('div');
             newLine.textContent = 'Terminal screen cleared.';
             output.appendChild(newLine);
 
-            // Show help message again after clearing
             const helpMessage = document.createElement('div');
             helpMessage.textContent = 'Type "help" for a list of available commands.';
             output.appendChild(helpMessage);
@@ -57,9 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const newLine = document.createElement('div');
             newLine.textContent = currentDate;
             output.appendChild(newLine);
+            output.appendChild(document.createElement('br'));
+
         } else if (command.toLowerCase() === 'whois') {
             const whoisInfo = `
-            <br>
                 *~~~[============>
                 <br>Hello, I'm Melih Ateş. 
                 <br>My interest in the software world started when I was young, by working on website and game projects. 
@@ -131,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 window.close();
             }, 1000);
+            output.appendChild(document.createElement('br'));
         } else {
             const newLine = document.createElement('div');
             newLine.textContent = `Command "${command}" not recognized. Type "help" for available commands.`;
