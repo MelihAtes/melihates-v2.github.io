@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (command.toLowerCase() === 'help') {
             const availableCommands = [
                 'help - Shows this help message.',
-                'whois - Who is Melih Ateş',
+                'about - About Melih Ateş',
                 'social - Access my social media and contact information',
                 'games - Links to the games I made',
                 'videos - Links to the videos I made',
                 'articles - Links to the articles I wrote',
-                'clear - Clears the terminal screen.',
-                'date - Displays the current date and time.',
-                'exit - Closes the terminal window.',
+                'clear - Clears the terminal screen',
+                'date - Displays the current date and time',
+                'exit - Closes the terminal window',
             ];
 
             availableCommands.forEach(cmd => {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (command.toLowerCase() === 'clear') {
             output.innerHTML = ''; // Clear command
             const newLine = document.createElement('div');
-            newLine.textContent = 'Terminal screen cleared.';
+
             output.appendChild(newLine);
 
             const helpMessage = document.createElement('div');
@@ -59,19 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
             output.appendChild(newLine);
             output.appendChild(document.createElement('br'));
 
-        } else if (command.toLowerCase() === 'whois') {
-            const whoisInfo = `
+        } else if (command.toLowerCase() === 'about') {
+            const aboutInfo = `
                 *~~~[============>
                 <br>Hello, I'm Melih Ateş. 
-                <br>My interest in the software world started when I was young, by working on website and game projects. 
-                <br>I am currently a student at Ankara University studying Computer Programming, focusing particularly on modern technologies like React and Node.js, while also honing my algorithmic thinking skills with the C++ language. 
-                <br>Additionally, in my spare time, I create videos and write articles, which you can explore through the links I've provided.
+                <br>I developed an interest in the software world at a young age, as I imagined the kinds of website and game projects I could create.
+                <br>I am currently a student at Ankara University studying Computer Programming, particularly focusing on learning backend with Node.js and striving to improve my skills in C++ as well.
+                <br>Additionally, you can explore some videos and articles I made through the links I've provided.
                 <br>*~~~[============>
                 <br><br>
             `;
             const newLine = document.createElement('div');
-            newLine.innerHTML = whoisInfo;
+            newLine.innerHTML = aboutInfo;
             output.appendChild(newLine);
+
         } else if (command.toLowerCase() === 'social') {
             const socialInfo = `
                 * email: melihates2004@gmail.com
@@ -89,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newLine = document.createElement('div');
             newLine.innerHTML = socialInfo;
             output.appendChild(newLine);
+
         } else if (command.toLowerCase() === 'games') {
             const gamesInfo = `
             
@@ -99,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newLine = document.createElement('div');
             newLine.innerHTML = gamesInfo;
             output.appendChild(newLine);
+
         } else if (command.toLowerCase() === 'videos') {
             const videosInfo = `
                   
