@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function executeCommand(command) {
         if (command.toLowerCase() === 'help') {
             const availableCommands = [
-                'help - Shows this help message.',
                 'about - About Melih Ateş',
                 'social - Access my social media and contact information',
                 'games - Links to the games I made',
