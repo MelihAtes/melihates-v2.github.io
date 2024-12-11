@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function executeCommand(command) {
         if (command.toLowerCase() === 'help') {
             const availableCommands = [
-                'about - About Melih Ateş',
-                'social - Access my social media and contact information',
-                'games - Links to the games I made',
-                'videos - Links to the videos I made',
-                'articles - Links to the articles I wrote',
-                'clear - Clears the terminal screen',
-                'date - Displays the current date and time',
-                'exit - Closes the terminal window',
+                'about > About Melih Ateş',
+                'social > Access my social media and contact information',
+                'games > Links to the games I made',
+                'videos > Links to the videos I made',
+                'articles > Links to the articles I wrote',
+                'clear > Clears the terminal screen',
+                'date > Displays the current date and time',
+                'exit > Closes the terminal window',
             ];
 
             availableCommands.forEach(cmd => {
